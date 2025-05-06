@@ -72,9 +72,9 @@ def login(driver):
         ))
     loginElement.click()
     driver.find_element(
-        by=By.XPATH, value='//*[@id="customer_email"]').send_keys('awdzsxqe86@gmail.com')
+        by=By.XPATH, value='//*[@id="customer_email"]').send_keys('{email}')
     driver.find_element(
-        by=By.XPATH, value='//*[@id="customer_password"]').send_keys('Rhion123')
+        by=By.XPATH, value='//*[@id="customer_password"]').send_keys('{password}')
     driver.find_element(
         by=By.XPATH, value='//*[@id="customer_login"]/div').click()
     WebDriverWait(driver, 10).until(
